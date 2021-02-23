@@ -33,7 +33,6 @@ namespace FalloutAFK
                 try
                 {
                     m_InputSimulator.Keyboard.KeyDown(VirtualKeyCode.VK_W);
-                    m_InputSimulator.Keyboard.KeyDown(VirtualKeyCode.LSHIFT);
 
                     Thread.Sleep(1000);
 
@@ -64,7 +63,7 @@ namespace FalloutAFK
 
         private static void ResetJumpTime()
         {
-            m_TimeUntilJumpTimer = m_Random.Next(5, 25) + 1;
+            m_TimeUntilJumpTimer = m_Random.Next(30, 180) + 1;
         }
 
         private static void FindWindow()
